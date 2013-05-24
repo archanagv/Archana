@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EFC55B4C-6717-4DED-B60C-0B8F89DA8D0E}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RingConfigurator</RootNamespace>
+    <AssemblyName>RingConfigurator</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".gitignore" />
+    <Content Include="app\css\app.css" />
+    <Content Include="app\css\bootstrap-responsive.css" />
+    <Content Include="app\css\bootstrap-responsive.min.css" />
+    <Content Include="app\css\bootstrap.css" />
+    <Content Include="app\css\bootstrap.min.css" />
+    <Content Include="app\img\glyphicons-halflings-white.png" />
+    <Content Include="app\img\glyphicons-halflings.png" />
+    <Content Include="app\img\phones\dell-streak-7.0.jpg" />
+    <Content Include="app\img\phones\dell-streak-7.1.jpg" />
+    <Content Include="app\img\phones\dell-streak-7.2.jpg" />
+    <Content Include="app\img\phones\dell-streak-7.3.jpg" />
+    <Content Include="app\img\phones\dell-streak-7.4.jpg" />
+    <Content Include="app\img\phones\dell-venue.0.jpg" />
+    <Content Include="app\img\phones\dell-venue.1.jpg" />
+    <Content Include="app\img\phones\dell-venue.2.jpg" />
+    <Content Include="app\img\phones\dell-venue.3.jpg" />
+    <Content Include="app\img\phones\dell-venue.4.jpg" />
+    <Content Include="app\img\phones\dell-venue.5.jpg" />
+    <Content Include="app\img\phones\droid-2-global-by-motorola.0.jpg" />
+    <Content Include="app\img\phones\droid-2-global-by-motorola.1.jpg" />
+    <Content Include="app\img\phones\droid-2-global-by-motorola.2.jpg" />
+    <Content Include="app\img\phones\droid-pro-by-motorola.0.jpg" />
+    <Content Include="app\img\phones\droid-pro-by-motorola.1.jpg" />
+    <Content Include="app\img\phones\lg-axis.0.jpg" />
+    <Content Include="app\img\phones\lg-axis.1.jpg" />
+    <Content Include="app\img\phones\lg-axis.2.jpg" />
+    <Content Include="app\img\phones\motorola-atrix-4g.0.jpg" />
+    <Content Include="app\img\phones\motorola-atrix-4g.1.jpg" />
+    <Content Include="app\img\phones\motorola-atrix-4g.2.jpg" />
+    <Content Include="app\img\phones\motorola-atrix-4g.3.jpg" />
+    <Content Include="app\img\phones\motorola-bravo-with-motoblur.0.jpg" />
+    <Content Include="app\img\phones\motorola-bravo-with-motoblur.1.jpg" />
+    <Content Include="app\img\phones\motorola-bravo-with-motoblur.2.jpg" />
+    <Content Include="app\img\phones\motorola-charm-with-motoblur.0.jpg" />
+    <Content Include="app\img\phones\motorola-charm-with-motoblur.1.jpg" />
+    <Content Include="app\img\phones\motorola-charm-with-motoblur.2.jpg" />
+    <Content Include="app\img\phones\motorola-defy-with-motoblur.0.jpg" />
+    <Content Include="app\img\phones\motorola-defy-with-motoblur.1.jpg" />
+    <Content Include="app\img\phones\motorola-defy-with-motoblur.2.jpg" />
+    <Content Include="app\img\phones\motorola-xoom-with-wi-fi.0.jpg" />
+    <Content Include="app\img\phones\motorola-xoom-with-wi-fi.1.jpg" />
+    <Content Include="app\img\phones\motorola-xoom-with-wi-fi.2.jpg" />
+    <Content Include="app\img\phones\motorola-xoom-with-wi-fi.3.jpg" />
+    <Content Include="app\img\phones\motorola-xoom-with-wi-fi.4.jpg" />
+    <Content Include="app\img\phones\motorola-xoom-with-wi-fi.5.jpg" />
+    <Content Include="app\img\phones\motorola-xoom.0.jpg" />
+    <Content Include="app\img\phones\motorola-xoom.1.jpg" />
+    <Content Include="app\img\phones\motorola-xoom.2.jpg" />
+    <Content Include="app\img\phones\nexus-s.0.jpg" />
+    <Content Include="app\img\phones\nexus-s.1.jpg" />
+    <Content Include="app\img\phones\nexus-s.2.jpg" />
+    <Content Include="app\img\phones\nexus-s.3.jpg" />
+    <Content Include="app\img\phones\samsung-galaxy-tab.0.jpg" />
+    <Content Include="app\img\phones\samsung-galaxy-tab.1.jpg" />
+    <Content Include="app\img\phones\samsung-galaxy-tab.2.jpg" />
+    <Content Include="app\img\phones\samsung-galaxy-tab.3.jpg" />
+    <Content Include="app\img\phones\samsung-galaxy-tab.4.jpg" />
+    <Content Include="app\img\phones\samsung-galaxy-tab.5.jpg" />
+    <Content Include="app\img\phones\samsung-galaxy-tab.6.jpg" />
+    <Content Include="app\img\phones\samsung-gem.0.jpg" />
+    <Content Include="app\img\phones\samsung-gem.1.jpg" />
+    <Content Include="app\img\phones\samsung-gem.2.jpg" />
+    <Content Include="app\img\phones\samsung-mesmerize-a-galaxy-s-phone.0.jpg" />
+    <Content Include="app\img\phones\samsung-mesmerize-a-galaxy-s-phone.1.jpg" />
+    <Content Include="app\img\phones\samsung-mesmerize-a-galaxy-s-phone.2.jpg" />
+    <Content Include="app\img\phones\samsung-mesmerize-a-galaxy-s-phone.3.jpg" />
+    <Content Include="app\img\phones\samsung-showcase-a-galaxy-s-phone.0.jpg" />
+    <Content Include="app\img\phones\samsung-showcase-a-galaxy-s-phone.1.jpg" />
+    <Content Include="app\img\phones\samsung-showcase-a-galaxy-s-phone.2.jpg" />
+    <Content Include="app\img\phones\samsung-transform.0.jpg" />
+    <Content Include="app\img\phones\samsung-transform.1.jpg" />
+    <Content Include="app\img\phones\samsung-transform.2.jpg" />
+    <Content Include="app\img\phones\samsung-transform.3.jpg" />
+    <Content Include="app\img\phones\samsung-transform.4.jpg" />
+    <Content Include="app\img\phones\sanyo-zio.0.jpg" />
+    <Content Include="app\img\phones\sanyo-zio.1.jpg" />
+    <Content Include="app\img\phones\sanyo-zio.2.jpg" />
+    <Content Include="app\img\phones\t-mobile-g2.0.jpg" />
+    <Content Include="app\img\phones\t-mobile-g2.1.jpg" />
+    <Content Include="app\img\phones\t-mobile-g2.2.jpg" />
+    <Content Include="app\img\phones\t-mobile-mytouch-4g.0.jpg" />
+    <Content Include="app\img\phones\t-mobile-mytouch-4g.1.jpg" />
+    <Content Include="app\img\phones\t-mobile-mytouch-4g.2.jpg" />
+    <Content Include="app\img\phones\t-mobile-mytouch-4g.3.jpg" />
+    <Content Include="app\img\phones\t-mobile-mytouch-4g.4.jpg" />
+    <Content Include="app\img\phones\t-mobile-mytouch-4g.5.jpg" />
+    <Content Include="app\index-async.html" />
+    <Content Include="app\index.html" />
+    <Content Include="app\js\app.js" />
+    <Content Include="app\js\controllers.js" />
+    <Content Include="app\js\directives.js" />
+    <Content Include="app\js\filters.js" />
+    <Content Include="app\js\services.js" />
+    <Content Include="app\lib\angular\angular-cookies.js" />
+    <Content Include="app\lib\angular\angular-cookies.min.js" />
+    <Content Include="app\lib\angular\angular-loader.js" />
+    <Content Include="app\lib\angular\angular-loader.min.js" />
+    <Content Include="app\lib\angular\angular-resource.js" />
+    <Content Include="app\lib\angular\angular-resource.min.js" />
+    <Content Include="app\lib\angular\angular-sanitize.js" />
+    <Content Include="app\lib\angular\angular-sanitize.min.js" />
+    <Content Include="app\lib\angular\angular.js" />
+    <Content Include="app\lib\angular\angular.min.js" />
+    <Content Include="app\lib\angular\version.txt" />
+    <Content Include="app\partials\phone-detail.html" />
+    <Content Include="app\partials\phone-list.html" />
+    <Content Include="config\karma-e2e.conf.js" />
+    <Content Include="config\karma.conf.js" />
+    <Content Include="scripts\private\ScrapeData.js" />
+    <Content Include="scripts\web-server.js" />
+    <Content Include="test\e2e\runner.html" />
+    <Content Include="test\e2e\scenarios.js" />
+    <Content Include="test\lib\angular\angular-mocks.js" />
+    <Content Include="test\lib\angular\angular-scenario.js" />
+    <Content Include="test\lib\angular\version.txt" />
+    <Content Include="test\unit\controllersSpec.js" />
+    <Content Include="test\unit\directivesSpec.js" />
+    <Content Include="test\unit\filtersSpec.js" />
+    <Content Include="test\unit\servicesSpec.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".travis.yml" />
+    <None Include="app\css\.gitkeep" />
+    <None Include="app\img\.gitkeep" />
+    <None Include="app\partials\.gitkeep" />
+    <None Include="app\phones\dell-streak-7.json" />
+    <None Include="app\phones\dell-venue.json" />
+    <None Include="app\phones\droid-2-global-by-motorola.json" />
+    <None Include="app\phones\droid-pro-by-motorola.json" />
+    <None Include="app\phones\lg-axis.json" />
+    <None Include="app\phones\motorola-atrix-4g.json" />
+    <None Include="app\phones\motorola-bravo-with-motoblur.json" />
+    <None Include="app\phones\motorola-charm-with-motoblur.json" />
+    <None Include="app\phones\motorola-defy-with-motoblur.json" />
+    <None Include="app\phones\motorola-xoom-with-wi-fi.json" />
+    <None Include="app\phones\motorola-xoom.json" />
+    <None Include="app\phones\nexus-s.json" />
+    <None Include="app\phones\phones.json" />
+    <None Include="app\phones\samsung-galaxy-tab.json" />
+    <None Include="app\phones\samsung-gem.json" />
+    <None Include="app\phones\samsung-mesmerize-a-galaxy-s-phone.json" />
+    <None Include="app\phones\samsung-showcase-a-galaxy-s-phone.json" />
+    <None Include="app\phones\samsung-transform.json" />
+    <None Include="app\phones\sanyo-zio.json" />
+    <None Include="app\phones\t-mobile-g2.json" />
+    <None Include="app\phones\t-mobile-mytouch-4g.json" />
+    <None Include="logs\.gitkeep" />
+    <None Include="README.md" />
+    <None Include="scripts\e2e-test.bat" />
+    <None Include="scripts\e2e-test.sh" />
+    <None Include="scripts\private\format-json.sh" />
+    <None Include="scripts\private\goto_step.bat" />
+    <None Include="scripts\private\goto_step.sh" />
+    <None Include="scripts\private\push-to-github.sh" />
+    <None Include="scripts\private\retag.sh" />
+    <None Include="scripts\private\snapshot-web.sh" />
+    <None Include="scripts\private\snapshot.sh" />
+    <None Include="scripts\test.bat" />
+    <None Include="scripts\test.sh" />
+    <None Include="scripts\update-repo.sh" />
+    <None Include="scripts\watchr.rb" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>65089</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
